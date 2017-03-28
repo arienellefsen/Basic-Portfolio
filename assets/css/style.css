@@ -1,0 +1,56 @@
+body {
+    background: #ccc;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+header {
+    background: #fff;
+    height: 90px;
+    border-bottom: 2px solid #cccccc;
+    margin-bottom: 40px;
+}
+
+.logo {
+    background: #4aaaa5;
+    width: 120px;
+    height: 80px;
+    color: #fff;
+    float: left;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 10px;
+    float: right;
+}
+
+nav ul li a {
+    color: #ccc;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+section.content {
+    width: 650px;
+    float: left;
+    background: #fff;
+    border: 1px solid #dddddd;
+}
+
+aside.side-bar {
+    width: 270px;
+    float: right;
+    background: #fff;
+    border: 1px solid #dddddd;
+}
+
+section.content h1 {
+    color: red;
+}
