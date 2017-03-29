@@ -1,16 +1,11 @@
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
-    
 }
 
 body {
-background-image: url("file:///Users/Admin/Desktop/homework/Basic-Portfolio/assets/images/green_cup.png");
-    background-color: #cccccc;
-
-
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color:#777;
+    background: url("../images/green_cup.png") #a2a892 repeat;
+    color: #777;
     width: 100%;
     height: 100%;
 }
@@ -39,61 +34,53 @@ header {
     text-align: center;
 }
 
-.logo h1{
-padding-top: 22px;
+.logo h1 {
+    padding-top: 22px;
+}
+
+nav ul {
+    float: right;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding-top: 30px;
 }
 
 nav ul li {
     display: inline-block;
     padding-right: 10px;
-    float: right;
-    padding-top: 30px;
+    border-left: 1px solid #ccc;
 }
-
-nav ul li:after {
-    display: inline-block;
-    padding-right: 10px;
-    float: right;
-    content:" | ";
-    padding-right: 20px;
-    padding-left: 20px;
-    color:#777;
-    font-size: 20px;
-}
-
-
-nav ul li:last{
-    content: "-";
-
-}
-
 
 nav ul li a {
     color: #777;
     text-decoration: none;
     font-size: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 11px;
+    -webkit-transition: color 2s; /* Safari */
+    transition: color 2s;
+}
+
+nav ul li:first-child {
+    border-left: none;
 }
 
 nav ul li a:hover {
-    color:#4aaaa5;
+    color: #4aaaa5;
 }
 
-.wrapper{
-
-}
-
-.main-content{
+.main-content {
     padding: 20px;
-    margin-bottom: 40px;
-
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.main-content > p{
+.main-content>p {
     padding-top: 30px;
     line-height: 30px;
     font-size: 16px;
+}
 
-}section.content {
+section.content {
     width: 650px;
     float: left;
     background: #fff;
@@ -101,13 +88,12 @@ nav ul li a:hover {
     padding-bottom: 50px;
 }
 
-img.img-profile{
+img.img-profile {
     float: left;
     padding-right: 20px;
     padding-top: 30px;
     width: 250px;
     height: 284px;
-
 }
 
 aside.side-bar {
@@ -117,15 +103,15 @@ aside.side-bar {
     border: 1px solid #dddddd;
 }
 
-section.content h1, aside.side-bar h1 {
+section.content h1,
+aside.side-bar h1 {
     color: #4aaaa5;
     border-bottom: 2px solid #dddddd;
     padding-bottom: 20px;
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-
-img.logo-social-media{
+img.logo-social-media {
     float: left;
     padding-right: 12px;
     padding-top: 20px;
@@ -134,25 +120,75 @@ img.logo-social-media{
     margin-left: 2px;
 }
 
-
-footer{
+footer {
     background: #666666;
-    border-top:10px solid #4aaaa5;
+    border-top: 10px solid #4aaaa5;
     margin-top: 40px;
     text-align: center;
-    color:#ccc;
+    color: #ccc;
     padding-top: 60px;
 }
 
-footer.sticky-footer{
-  height: 102px;
-  width:100%;
-  position:fixed;    
-  bottom:0;          
-  left:0; 
+footer.sticky-footer {
+    height: 102px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
-
 .clearfix {
-  overflow: auto;
+    overflow: auto;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px 6px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #777;
+}
+
+form {
+    padding-top: 20px;
+}
+
+input[type=button] {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+img.portfolio-images {
+    width: 187px;
+    height: 142px;
+}
+
+.portfolio {
+    float: left;
+    margin-bottom: 30px;
+    width: 187px;
+    height: 142px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+p.portfolio-description {
+    background: #4aaaa5;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-right: 15px;
+    position: relative;
+    bottom: 48px;
+    width: 167px;
+}
+
+.portfolio-images:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
