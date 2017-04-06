@@ -97,7 +97,7 @@ section.content p{
 
 
 section.side-bar{
-    width: 270px;
+    width: 230px;
     float: left;
     background: #fff;
     padding-top: 40px;
@@ -116,12 +116,7 @@ img.img-profile {
     height: 284px;
 }
 
-aside.side-bar {
-    width: 270px;
-    float: right;
-    background: #fff;
-    border: 1px solid #dddddd;
-}
+
 
 section.content h1,
 section.side-bar h1 {
@@ -215,35 +210,34 @@ p.portfolio-description {
 }
 
 
-@media only screen and (max-width: 640px) {
+/*Media Query Phones*/
 
+@media only screen and (max-width: 640px) {
     .wrapper {
     width: 100%;
     margin: 0px auto;
     padding: 0px;
 }
 
-    .wrapper-content{
-    width: 90%;
-    margin: 0px auto;
-    padding: 0px;
-}
-
-
+    
 
 section.content{
-width: 90%;
+width: 88%;
 height: 100%;
 float: left;
+margin-left: 15px;
+margin-right: 5px;
 }
 
 
 
 section.side-bar{
     float: left;
-    width: 100%;
+    width: 88%;
     margin-bottom: 100px;
     margin-top:50px;
+    margin-left: 15px;
+margin-right: 5px;
 
     
 }
@@ -289,6 +283,30 @@ img.img-profile {
     padding-bottom: 10px;
 }
 
+.portfolio{
+    width: 100%;
+    height: 300px;
+
+}
+
+img.portfolio-images {
+    width: 100%;
+    height: 250px;
+
+}
+
+p.portfolio-description {
+    background: #4aaaa5;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-right: 15px;
+    position: relative;
+    bottom: 58px;
+    width: 96%;
+
+}
+
 
 footer {
     background: #666666;
@@ -306,7 +324,134 @@ footer.sticky-footer {
     bottom: 0;
     left: 0;
 }
+}
 
+/*Media Query tablets*/
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+section.content{
+width: 88%;
+height: 100%;
+float: left;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+
+
+section.side-bar{
+    float: left;
+    width: 88%;
+    margin-bottom: 150px;
+    margin-top:50px;
+    margin-left: 15px;
+margin-right: 5px;
+
+    
+}
+footer {
+    background: #666666;
+    border-top: 10px solid #4aaaa5;
+    margin-top: 40px;
+    text-align: center;
+    color: #ccc;
+    padding-top: 10px;
+}
+
+footer.sticky-footer {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 
 }
+
+/*Media Query desktops*/
+
+@media only screen and (max-width: 980px) {
+    .wrapper {
+    width: 80%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+section.content{
+width: 50%;
+height: 100%;
+float: left;
+margin-left: 15px;
+margin-right: 5px;
+margin-bottom: 120px;
+}
+
+
+
+section.side-bar{
+    float: right;
+    width: 35%;  
+    margin-left: 15px;
+}
+
+
+img.img-profile {
+    display: block;
+    padding-right: 20px;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.portfolio{
+    width: 100%;
+    height: 300px;
+
+}
+
+img.portfolio-images {
+    width: 100%;
+    height: 250px;
+
+}
+
+p.portfolio-description {
+    background: #4aaaa5;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-right: 15px;
+    position: relative;
+    bottom: 58px;
+    width: 95%;
+
+}
+
+
+footer {
+    background: #666666;
+    border-top: 10px solid #4aaaa5;
+    margin-top: 40px;
+    text-align: center;
+    color: #ccc;
+    padding-top: 10px;
+}
+
+footer.sticky-footer {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+}
+
 
